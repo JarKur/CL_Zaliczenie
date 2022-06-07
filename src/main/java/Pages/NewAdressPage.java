@@ -11,7 +11,7 @@ public class NewAdressPage {
 
         this.driver=driver;
     }
-    public void fillNewAdress(String alias,String address,String city,String postalcode,String phone) {
+    public void fillNewAdress(String alias, String address, String city, String postalcode, String phone, String string6) {
         driver.findElement(By.cssSelector("#footer_account_list > li:nth-child(4) > a")).click();
         driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/a")).click();
 
