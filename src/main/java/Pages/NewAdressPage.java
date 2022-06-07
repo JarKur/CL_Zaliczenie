@@ -11,10 +11,7 @@ public class NewAdressPage {
 
         this.driver=driver;
     }
-    public void fillNewAdress(String alias, String address, String city, String postalcode, String phone, String string6) {
-        driver.findElement(By.cssSelector("#footer_account_list > li:nth-child(4) > a")).click();
-        driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/a")).click();
-
+    public void fillNewAddress(String alias,String address,String city,String postalcode,String phone){
         WebElement aliasInput = driver.findElement(By.name("alias"));
         WebElement addressInput = driver.findElement(By.name("address1"));
         WebElement cityInput = driver.findElement(By.name("city"));
@@ -31,7 +28,6 @@ public class NewAdressPage {
         selectCountry.click();
         WebElement chooseUK = driver.findElement(By.xpath("/html/body/main/section/div/div/section/section/div/div/form/section/div[10]/div[1]/select/option[2]"));
         chooseUK.click();
-
 
     }
 }

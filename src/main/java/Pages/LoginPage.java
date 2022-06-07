@@ -18,7 +18,10 @@ public class LoginPage {
         emailInput.sendKeys(email);
         passwordInput.sendKeys(password);
         driver.findElement(By.id("submit-login")).click();
-
+        WebElement clickOnAddresses = driver.findElement(By.cssSelector("[title=Addresses]"));
+        clickOnAddresses.click();
+        WebElement clickOnCreateNewAddress = driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/a"));
+        clickOnCreateNewAddress.click();
     }
 
 }
